@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matriculació"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!-- Checkboxes para elegir materias -->
+    <CheckBox
+        android:id="@+id/materia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diseny 2d/3d" />
+
+    <CheckBox
+        android:id="@+id/materia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interficies" />
+
+    <CheckBox
+        android:id="@+id/materia3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PSP" />
+
+    <!-- RadioButtons para elegir turno -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <RadioButton
+            android:id="@+id/turno_mati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matí" />
+
+        <RadioButton
+            android:id="@+id/turno_tarda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarda" />
+
+</RadioGroup>
+    </LinearLayout>
